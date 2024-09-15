@@ -1,0 +1,40 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  align-items: start;
+}
+
+a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.4rem;
+}
+a:hover {
+  color: #535bf2;
+}
+a.active {
+  color: pink;
+  font-size: 1.05rem;
+}
+
+.header-navigation-bar {
+  display: flex;
+  justify-content: start;
+  background-color: #333;
+  padding: 0.6rem 0.6rem;
+  width: 100vw;
+}
+
+.pages {
+  margin-left: 1rem;
+}
