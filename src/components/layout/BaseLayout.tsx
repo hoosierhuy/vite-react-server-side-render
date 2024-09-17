@@ -17,7 +17,7 @@ const Layout: FC<BaseLayoutProps> = ({ children }) => {
 
   // During this first run, hydrated will have the default value of false, which will cause the component to return null. Also in this first run, useEffect() will call setHydrated(true), which will trigger a second render after the first has completed.
 
-  // By the time the second render runs, the app will already be hydrated, so there is no need to worry about the errors occurring anymore. At this point hydrated will be true, so the randomized numbers will render normally.
+  // By the time the second render runs, the app will already be hydrated, so there is no need to worry about the errors occurring anymore. At this point hydrated will be true.
 
   useEffect(() => {
     setHydrated(true)
