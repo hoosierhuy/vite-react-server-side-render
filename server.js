@@ -41,7 +41,8 @@ if (!isProduction) {
 }
 
 // Serve HTML
-app.use('*', async (req, res) => {
+// "*home" is Express 5.x syntax for matching all routes
+app.use('*home', async (req, res) => {
   try {
     const url = req.originalUrl.replace(base, '')
 

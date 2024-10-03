@@ -2,6 +2,8 @@
 
 ## Finished Project
 
+### `main` branch
+
 Vite + React + TypeScript + Server Side Rendering.
 
 ## How to run
