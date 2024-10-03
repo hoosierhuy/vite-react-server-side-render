@@ -1,8 +1,13 @@
 # vite-react-server-side-rendering
 
-## Finished Project
+## Work around for:
 
-### `main` branch
+SyntaxError: [vite] Named export 'ClockLoader' not found.
+The requested module 'react-spinners' is a CommonJS module,
+which may not support all module.exports as named exports.
+https://vike.dev/broken-npm-package#workaround
+
+### `with-react-spinner` branch
 
 Vite + React + TypeScript + Server Side Rendering.
 
