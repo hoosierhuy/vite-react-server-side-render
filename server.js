@@ -33,6 +33,20 @@ if (!isProduction) {
     base,
   })
   app.use(vite.middlewares)
+
+  app.use(async (req, res, next) => {
+    try {
+      // Custom middleware logic
+      next()
+    } catch (error) {
+      const statusCode = error.status || 500
+      const html = await vite.transformIndexHtml(
+        req.url,
+        `<h1>${statusCode} Error</h1>`
+      )
+      res.status(statusCode).set({ 'Content-Type': 'text/html' }).end(html)
+    }
+  })
 } else {
   const compression = (await import('compression')).default
   const sirv = (await import('sirv')).default
