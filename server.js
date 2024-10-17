@@ -41,7 +41,7 @@ if (!isProduction) {
 }
 
 // Serve HTML
-app.use('*home', async (req, res) => {
+app.use('*all', async (req, res) => {
   try {
     const url = req.originalUrl.replace(base, '')
 
