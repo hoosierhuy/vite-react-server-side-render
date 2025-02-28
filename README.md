@@ -47,6 +47,6 @@ If you would like to contribute to me coffee fund: [Donate via PayPal](https://w
 <img src="src/assets/lighthouse_vite_react_ssr.png" />
 
 - no blank page
-- loads in 420ms
+- loads in 340ms
 - ~70KB javascript
 <img src="src/assets/metrics_400ms_70KB.png" />
