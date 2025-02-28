@@ -19,8 +19,6 @@ Vite + React + TypeScript + Server Side Rendering.
 
 If you would like to contribute to me coffee fund: [Donate via PayPal](https://www.paypal.com/donate/?business=XNPNP5FWN4B2A&no_recurring=0&item_name=I+provide+free+computer+science+training+to+everyone&currency_code=USD)
 
-<img src="src/assets/homepage.png" />
-
 ## Why should you use Vite React.js SSR?
 
 **pros**
