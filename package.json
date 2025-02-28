@@ -3,30 +3,31 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
+  "author": "Huy Nguyen",
   "scripts": {
     "dev": "node server",
     "build": "GENERATE_SOURCEMAP=false npm run build:client && npm run build:server",
-    "build:client": "GENERATE_SOURCEMAP=false vite build --ssrManifest --outDir dist/client",
+    "build:client": "GENERATE_SOURCEMAP=false vite build  --ssrManifest --outDir dist/client",
     "build:server": "GENERATE_SOURCEMAP=false vite build --ssr src/entry-server.tsx --outDir dist/server",
     "preview": "cross-env NODE_ENV=production node server"
   },
   "dependencies": {
-    "compression": "1.7.5",
-    "express": "5.0.1",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "react-router-dom": "^6.27.0",
-    "sirv": "3.0.0"
+    "compression": "^1.8.0",
+    "express": "^5.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.2.0",
+    "sirv": "^3.0.1"
   },
   "devDependencies": {
-    "@types/express": "5.0.0",
-    "@types/node": "22.13.1",
-    "@types/react": "19.0.8",
-    "@types/react-dom": "19.0.3",
-    "@vitejs/plugin-react": "4.3.4",
-    "@vitejs/plugin-react-swc": "3.8.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/react-router": "^5.1.20",
+    "@vitejs/plugin-react-swc": "^3.8.0",
     "cross-env": "^7.0.3",
-    "typescript": "5.7.3",
-    "vite": "6.1.0"
+    "typescript": "~5.7.3",
+    "vite": "^6.1.1"
   }
 }
