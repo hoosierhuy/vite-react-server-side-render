@@ -7,7 +7,7 @@ import BaseLayout from '../../components/layout/BaseLayout'
 export const ContactUs = (): JSX.Element => {
   return (
     <BaseLayout>
-      <h3>Contact Us</h3>
+      <h1>Contact Us</h1>
       Contact us using your telepathic abilities 🤣.
     </BaseLayout>
   )

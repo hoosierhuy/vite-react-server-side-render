@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -17,7 +17,6 @@ a {
   font-weight: 500;
   color: #fff;
   text-decoration: none;
-  margin-right: 1.4rem;
 }
 a:hover {
   color: #535bf2;
@@ -33,6 +32,14 @@ a.active {
   background-color: #333;
   padding: 0.6rem 0.6rem;
   width: 100vw;
+}
+.header-navigation-bar a {
+  margin-right: 1.4rem;
+}
+
+h1 {
+  font-size: 1.17rem;
+  line-height: 1.1;
 }
 
 .pages {

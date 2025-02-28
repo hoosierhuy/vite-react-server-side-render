@@ -7,7 +7,7 @@ import BaseLayout from '../../components/layout/BaseLayout'
 export const Home = (): JSX.Element => {
   return (
     <BaseLayout>
-      <h3>Home</h3>
+      <h1>Home</h1>
       Home, sweet home 🏠.
     </BaseLayout>
   )

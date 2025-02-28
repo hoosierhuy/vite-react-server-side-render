@@ -1,8 +1,9 @@
-import { Routes, Route } from 'react-router-dom'
+import { Route, Routes } from "react-router";
 
-import { About, ContactUs, Home } from '../pages'
-
-import Error from '../components/Error'
+import Error from '../components/Error';
+import { About } from "../pages/about/About";
+import { ContactUs } from "../pages/contactUs/ContactUs";
+import { Home } from "../pages/home/Home";
 
 export const Router = () => {
   return (

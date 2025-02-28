@@ -1,10 +1,8 @@
 // Libraries imports
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { ErrorProps } from './Error.types'
 
 // This component is displayed when the end-user navigates to a non-existent page.
-export interface ErrorProps {
-  statusCode?: number
-}
 
 function Error({ statusCode }: ErrorProps) {
   const [hydrated, setHydrated] = useState(false)

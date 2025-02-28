@@ -1,14 +1,18 @@
-// Libraries imports
-import { FC, ReactNode } from 'react'
-
-// App level imports
-import HeaderNavigationBar from './navigationBar/HeaderNavigationBar'
-
-type BaseLayoutProps = {
-  children: ReactNode
-}
+import { FC, useEffect, useState } from "react";
+import { BaseLayoutProps } from "./BaseLayout.types";
+import HeaderNavigationBar from './navigationBar/HeaderNavigationBar';
 
 const Layout: FC<BaseLayoutProps> = ({ children }) => {
+  const [hyrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+  
+  if (!hyrated) {
+    return null;
+  }
+
   return (
     <>
       <HeaderNavigationBar />
@@ -17,4 +21,4 @@ const Layout: FC<BaseLayoutProps> = ({ children }) => {
   )
 }
 
-export default Layout
+export default Layout;
